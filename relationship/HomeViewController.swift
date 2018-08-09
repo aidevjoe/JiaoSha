@@ -75,12 +75,12 @@ class HomeViewController: UIViewController {
     }
     
     private lazy var labelSwitch: LabelSwitch = {
-        let ls = LabelSwitchConfig(text: "女",
+        let ls = LabelSwitchConfig(text: " 女 ",
                                    textColor: .white,
                                    font: .boldSystemFont(ofSize: 15),
                                    gradientColors: [UIColor.orange.cgColor, UIColor.yellow.cgColor], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1, y: 0.5))
         
-        let rs = LabelSwitchConfig(text: "男",
+        let rs = LabelSwitchConfig(text: " 男 ",
                                    textColor: .white,
                                    font: .boldSystemFont(ofSize: 15),
                                    gradientColors: [UIColor.yellow.cgColor, UIColor.orange.cgColor], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1, y: 0.5))
@@ -106,7 +106,13 @@ class HomeViewController: UIViewController {
         UIView.activate(constraints: [fatherBtn.heightAnchor.constraint(equalTo: fatherBtn.widthAnchor)])
         
         [resultLabel, enterLabel].forEach { $0.adjustsFontSizeToFitWidth = true }
+    
+        isNight = UserDefaults.standard.bool(forKey: "isNight")
         
+        checkBtnState()
+    }
+    
+    private func checkBtnState() {
         if labelSwitch.curState == .L {
             wifeBtn.isEnabled = true
             husbandBtn.isEnabled = false
@@ -114,8 +120,6 @@ class HomeViewController: UIViewController {
             wifeBtn.isEnabled = false
             husbandBtn.isEnabled = true
         }
-        
-        isNight = UserDefaults.standard.bool(forKey: "isNight")
     }
     
     @IBAction func tapKeyAction(_ btn: CalculatorButton) {
@@ -221,6 +225,7 @@ extension HomeViewController {
 extension HomeViewController: LabelSwitchDelegate {
     func switchChangToState(_ state: LabelSwitchState) {
         labelSwitch.curState = state
+        checkBtnState()
         refreshRelative()
     }
 }

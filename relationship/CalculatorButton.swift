@@ -83,7 +83,7 @@ class CalculatorButton: UIButton {
     
     private func sharedInit() {
         layer.masksToBounds = true
-        titleLabel?.font = UIFont.systemFont(ofSize: 28)
+        titleLabel?.font = UIFont.systemFont(ofSize: 25)
         
         colorTheme = .day
 
@@ -99,7 +99,7 @@ class CalculatorButton: UIButton {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        layer.cornerRadius = bounds.width / 2
+        layer.cornerRadius = 10//bounds.width / 2
     }
     
     @objc private func touchDown() {

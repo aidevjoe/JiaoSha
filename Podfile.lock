@@ -1,10 +1,10 @@
 PODS:
   - LabelSwitch (0.1.4)
-  - Reveal-SDK (8)
+  - Reveal-SDK (14)
 
 DEPENDENCIES:
   - LabelSwitch
-  - Reveal-SDK (~> 8)
+  - Reveal-SDK (~> 14)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -13,8 +13,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   LabelSwitch: 73ca5a7c23c0aa1604793d69e116af0115c5fa59
-  Reveal-SDK: 43be4e662864e937960d0d04d005135e29c4e53b
+  Reveal-SDK: 55b5c5545233b680c2f8da734f202acc15d422b7
 
-PODFILE CHECKSUM: d72979c5a5ee7f4de1f75579e05a12c0762b7812
+PODFILE CHECKSUM: 3b865e91afaf2b221565d0b16d836544d93d4bbe
 
 COCOAPODS: 1.5.3

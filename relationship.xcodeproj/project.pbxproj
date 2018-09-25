@@ -361,7 +361,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-relationship/Pods-relationship-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LabelSwitch/LabelSwitch.framework",
-				"${PODS_ROOT}/Reveal-SDK/RevealServer-8/iOS/RevealServer.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-14/iOS/RevealServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (

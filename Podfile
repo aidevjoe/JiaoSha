@@ -6,7 +6,7 @@ target 'relationship' do
   use_frameworks!
 
 
-  pod 'Reveal-SDK', '~> 8', :configurations => ['Debug']
+  pod 'Reveal-SDK', '~> 14', :configurations => ['Debug']
   pod 'LabelSwitch'
 
   # Pods for relationship

@@ -1,9 +1,8 @@
 import UIKit
 import JavaScriptCore
-import LabelSwitch
 
 class BaseNavigationController: UINavigationController {
-    override var childViewControllerForStatusBarStyle: UIViewController? {
+    override var childForStatusBarStyle: UIViewController? {
         return topViewController
     }
 }
@@ -74,25 +73,6 @@ class HomeViewController: UIViewController {
         }
     }
     
-    private lazy var labelSwitch: LabelSwitch = {
-        let ls = LabelSwitchConfig(text: " 女 ",
-                                   textColor: .white,
-                                   font: .boldSystemFont(ofSize: 15),
-                                   gradientColors: [UIColor.orange.cgColor, UIColor.yellow.cgColor], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1, y: 0.5))
-        
-        let rs = LabelSwitchConfig(text: " 男 ",
-                                   textColor: .white,
-                                   font: .boldSystemFont(ofSize: 15),
-                                   gradientColors: [UIColor.yellow.cgColor, UIColor.orange.cgColor], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1, y: 0.5))
-        
-        
-        // Set the default state of the switch,
-        let labelSwitch = LabelSwitch(center: .zero, leftConfig: ls, rightConfig: rs)
-        labelSwitch.delegate = self
-        labelSwitch.fullSizeTapEnabled = true
-        return labelSwitch
-    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -100,7 +80,6 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.tintColor = .orange
 
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: labelSwitch)
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "night"), style: .plain, target: self, action: #selector(switchTheme))
         
         UIView.activate(constraints: [fatherBtn.heightAnchor.constraint(equalTo: fatherBtn.widthAnchor)])
@@ -108,18 +87,6 @@ class HomeViewController: UIViewController {
         [resultLabel, enterLabel].forEach { $0.adjustsFontSizeToFitWidth = true }
     
         isNight = UserDefaults.standard.bool(forKey: "isNight")
-        
-        checkBtnState()
-    }
-    
-    private func checkBtnState() {
-        if labelSwitch.curState == .L {
-            wifeBtn.isEnabled = true
-            husbandBtn.isEnabled = false
-        } else {
-            wifeBtn.isEnabled = false
-            husbandBtn.isEnabled = true
-        }
     }
     
     @IBAction func tapKeyAction(_ btn: CalculatorButton) {
@@ -128,13 +95,20 @@ class HomeViewController: UIViewController {
         relatives.append(relation)
     }
     
+    private func renewBtnState() {
+        wifeBtn.isEnabled = true
+        husbandBtn.isEnabled = true
+    }
+    
     @IBAction func tapFunctionKeyAction(_ btn: CalculatorButton) {
         switch btn {
         case clearEntryBtn:
             if relatives.count > 0 {
+                renewBtnState()
                 relatives.removeLast()
             }
         case allClearBtn:
+            renewBtnState()
             relatives.removeAll()
         case convertBtn:
             convertBtn.isSelected = !convertBtn.isSelected
@@ -163,8 +137,8 @@ extension HomeViewController {
     /// reverse: 称呼方式：true对方称呼我,false我称呼对方
     private func relationship(text: String) {
         let reverse = convertBtn.isSelected
-        let sex: Sex = labelSwitch.curState == .L ? .man : .woman
-        let script = "relationship({text: '\(text)', sex: \(sex.rawValue), type: 'default', reverse: \(reverse ? "true" : "false")})"
+//        let sex: Sex = labelSwitch.curState == .L ? .man : .woman
+        let script = "relationship({text: '\(text)', sex: \(-1), type: 'default', reverse: \(reverse ? "true" : "false")})"
         let res = jsContext?.evaluateScript(script).toString()
         resultLabel.text = res
         
@@ -219,14 +193,6 @@ extension HomeViewController {
             self.resultLabel.textColor = self.isNight ? .white : .black
         }
         setNeedsStatusBarAppearanceUpdate()
-    }
-}
-
-extension HomeViewController: LabelSwitchDelegate {
-    func switchChangToState(_ state: LabelSwitchState) {
-        labelSwitch.curState = state
-        checkBtnState()
-        refreshRelative()
     }
 }
 

@@ -7,7 +7,6 @@ target 'relationship' do
 
 
   pod 'Reveal-SDK', '~> 14', :configurations => ['Debug']
-  pod 'LabelSwitch'
 
   # Pods for relationship
 

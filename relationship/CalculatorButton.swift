@@ -118,7 +118,7 @@ class CalculatorButton: UIButton {
 
 extension UIButton {
     
-    func setBackgroundColor(_ color: UIColor?, for state: UIControlState) {
+    func setBackgroundColor(_ color: UIColor?, for state: UIControl.State) {
         if let usingColor = color {
             let rect = CGRect(origin: .zero, size: CGSize(width: 1, height: 1))
             UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)

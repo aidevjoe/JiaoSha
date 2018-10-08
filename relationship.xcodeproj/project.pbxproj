@@ -7,38 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		60B744A906D977356C2A6F35 /* Pods_relationshipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F046B7B336E541FB5C07B6B /* Pods_relationshipUITests.framework */; };
-		BB4C0E094899E39C6087E69C /* Pods_relationshipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C021FC1333BED602B5B7898 /* Pods_relationshipTests.framework */; };
 		CAEB3D3E0E83B405CF483B6A /* Pods_relationship.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904327BAE0A2B6823469AA9A /* Pods_relationship.framework */; };
 		D8612A10211ABF8400B490E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8612A0F211ABF8400B490E4 /* AppDelegate.swift */; };
 		D8612A12211ABF8400B490E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8612A11211ABF8400B490E4 /* HomeViewController.swift */; };
 		D8612A15211ABF8400B490E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8612A13211ABF8400B490E4 /* Main.storyboard */; };
 		D8612A17211ABF8700B490E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8612A16211ABF8700B490E4 /* Assets.xcassets */; };
 		D8612A1A211ABF8700B490E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8612A18211ABF8700B490E4 /* LaunchScreen.storyboard */; };
-		D8612A25211ABF8700B490E4 /* relationshipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8612A24211ABF8700B490E4 /* relationshipTests.swift */; };
-		D8612A30211ABF8700B490E4 /* relationshipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8612A2F211ABF8700B490E4 /* relationshipUITests.swift */; };
 		D8612A3E211ABF9000B490E4 /* relationship.min.js in Resources */ = {isa = PBXBuildFile; fileRef = D8612A3D211ABF9000B490E4 /* relationship.min.js */; };
 		D8612A40211AC7D200B490E4 /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8612A3F211AC7D200B490E4 /* CalculatorButton.swift */; };
 		D8612A42211AC84B00B490E4 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8612A41211AC84B00B490E4 /* UIColor+.swift */; };
 		D8612A44211AC86E00B490E4 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8612A43211AC86E00B490E4 /* UIView+Layout.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D8612A21211ABF8700B490E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D8612A04211ABF8400B490E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D8612A0B211ABF8400B490E4;
-			remoteInfo = relationship;
-		};
-		D8612A2C211ABF8700B490E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D8612A04211ABF8400B490E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D8612A0B211ABF8400B490E4;
-			remoteInfo = relationship;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0F046B7B336E541FB5C07B6B /* Pods_relationshipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_relationshipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,12 +36,6 @@
 		D8612A16211ABF8700B490E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8612A19211ABF8700B490E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8612A1B211ABF8700B490E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8612A20211ABF8700B490E4 /* relationshipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = relationshipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8612A24211ABF8700B490E4 /* relationshipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = relationshipTests.swift; sourceTree = "<group>"; };
-		D8612A26211ABF8700B490E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8612A2B211ABF8700B490E4 /* relationshipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = relationshipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8612A2F211ABF8700B490E4 /* relationshipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = relationshipUITests.swift; sourceTree = "<group>"; };
-		D8612A31211ABF8700B490E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8612A3D211ABF9000B490E4 /* relationship.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = relationship.min.js; sourceTree = "<group>"; };
 		D8612A3F211AC7D200B490E4 /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
 		D8612A41211AC84B00B490E4 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
@@ -75,22 +48,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAEB3D3E0E83B405CF483B6A /* Pods_relationship.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8612A1D211ABF8700B490E4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BB4C0E094899E39C6087E69C /* Pods_relationshipTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8612A28211ABF8700B490E4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				60B744A906D977356C2A6F35 /* Pods_relationshipUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				D8612A0E211ABF8400B490E4 /* relationship */,
-				D8612A23211ABF8700B490E4 /* relationshipTests */,
-				D8612A2E211ABF8700B490E4 /* relationshipUITests */,
 				D8612A0D211ABF8400B490E4 /* Products */,
 				62336ABFF066E540D452B3A9 /* Pods */,
 				69C138A7F8935BAC82E8BC58 /* Frameworks */,
@@ -144,8 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				D8612A0C211ABF8400B490E4 /* relationship.app */,
-				D8612A20211ABF8700B490E4 /* relationshipTests.xctest */,
-				D8612A2B211ABF8700B490E4 /* relationshipUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,24 +118,6 @@
 				D8612A43211AC86E00B490E4 /* UIView+Layout.swift */,
 			);
 			path = relationship;
-			sourceTree = "<group>";
-		};
-		D8612A23211ABF8700B490E4 /* relationshipTests */ = {
-			isa = PBXGroup;
-			children = (
-				D8612A24211ABF8700B490E4 /* relationshipTests.swift */,
-				D8612A26211ABF8700B490E4 /* Info.plist */,
-			);
-			path = relationshipTests;
-			sourceTree = "<group>";
-		};
-		D8612A2E211ABF8700B490E4 /* relationshipUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D8612A2F211ABF8700B490E4 /* relationshipUITests.swift */,
-				D8612A31211ABF8700B490E4 /* Info.plist */,
-			);
-			path = relationshipUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,44 +142,6 @@
 			productReference = D8612A0C211ABF8400B490E4 /* relationship.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D8612A1F211ABF8700B490E4 /* relationshipTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D8612A37211ABF8700B490E4 /* Build configuration list for PBXNativeTarget "relationshipTests" */;
-			buildPhases = (
-				63B9C71F08EDC19F6C32C1F9 /* [CP] Check Pods Manifest.lock */,
-				D8612A1C211ABF8700B490E4 /* Sources */,
-				D8612A1D211ABF8700B490E4 /* Frameworks */,
-				D8612A1E211ABF8700B490E4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D8612A22211ABF8700B490E4 /* PBXTargetDependency */,
-			);
-			name = relationshipTests;
-			productName = relationshipTests;
-			productReference = D8612A20211ABF8700B490E4 /* relationshipTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D8612A2A211ABF8700B490E4 /* relationshipUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D8612A3A211ABF8700B490E4 /* Build configuration list for PBXNativeTarget "relationshipUITests" */;
-			buildPhases = (
-				DDA383A0B9093EFDE7543341 /* [CP] Check Pods Manifest.lock */,
-				D8612A27211ABF8700B490E4 /* Sources */,
-				D8612A28211ABF8700B490E4 /* Frameworks */,
-				D8612A29211ABF8700B490E4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D8612A2D211ABF8700B490E4 /* PBXTargetDependency */,
-			);
-			name = relationshipUITests;
-			productName = relationshipUITests;
-			productReference = D8612A2B211ABF8700B490E4 /* relationshipUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -257,14 +154,6 @@
 				TargetAttributes = {
 					D8612A0B211ABF8400B490E4 = {
 						CreatedOnToolsVersion = 9.4;
-					};
-					D8612A1F211ABF8700B490E4 = {
-						CreatedOnToolsVersion = 9.4;
-						TestTargetID = D8612A0B211ABF8400B490E4;
-					};
-					D8612A2A211ABF8700B490E4 = {
-						CreatedOnToolsVersion = 9.4;
-						TestTargetID = D8612A0B211ABF8400B490E4;
 					};
 				};
 			};
@@ -282,8 +171,6 @@
 			projectRoot = "";
 			targets = (
 				D8612A0B211ABF8400B490E4 /* relationship */,
-				D8612A1F211ABF8700B490E4 /* relationshipTests */,
-				D8612A2A211ABF8700B490E4 /* relationshipUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,20 +184,6 @@
 				D8612A17211ABF8700B490E4 /* Assets.xcassets in Resources */,
 				D8612A3E211ABF9000B490E4 /* relationship.min.js in Resources */,
 				D8612A15211ABF8400B490E4 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8612A1E211ABF8700B490E4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8612A29211ABF8700B490E4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,24 +208,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		63B9C71F08EDC19F6C32C1F9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-relationshipTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8C08FD29086C99F841F32C4D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,35 +215,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-relationship/Pods-relationship-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LabelSwitch/LabelSwitch.framework",
 				"${PODS_ROOT}/Reveal-SDK/RevealServer-14/iOS/RevealServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LabelSwitch.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-relationship/Pods-relationship-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DDA383A0B9093EFDE7543341 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-relationshipUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -406,36 +241,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8612A1C211ABF8700B490E4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8612A25211ABF8700B490E4 /* relationshipTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8612A27211ABF8700B490E4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8612A30211ABF8700B490E4 /* relationshipUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D8612A22211ABF8700B490E4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D8612A0B211ABF8400B490E4 /* relationship */;
-			targetProxy = D8612A21211ABF8700B490E4 /* PBXContainerItemProxy */;
-		};
-		D8612A2D211ABF8700B490E4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D8612A0B211ABF8400B490E4 /* relationship */;
-			targetProxy = D8612A2C211ABF8700B490E4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D8612A13211ABF8400B490E4 /* Main.storyboard */ = {
@@ -586,7 +392,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aidevjoe.relationship;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -606,90 +412,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aidevjoe.relationship;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		D8612A38211ABF8700B490E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB74AB52AD2607992A46E696 /* Pods-relationshipTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = relationshipTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aidevjoe.relationshipTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/relationship.app/relationship";
-			};
-			name = Debug;
-		};
-		D8612A39211ABF8700B490E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35AEEF999F3965208BCF56E6 /* Pods-relationshipTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = relationshipTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aidevjoe.relationshipTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/relationship.app/relationship";
-			};
-			name = Release;
-		};
-		D8612A3B211ABF8700B490E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EC6C1A36D79E5B9DBEF6643 /* Pods-relationshipUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = relationshipUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aidevjoe.relationshipUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = relationship;
-			};
-			name = Debug;
-		};
-		D8612A3C211ABF8700B490E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DF938FFA9AE0E319DA9062F /* Pods-relationshipUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = relationshipUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aidevjoe.relationshipUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = relationship;
 			};
 			name = Release;
 		};
@@ -710,24 +434,6 @@
 			buildConfigurations = (
 				D8612A35211ABF8700B490E4 /* Debug */,
 				D8612A36211ABF8700B490E4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D8612A37211ABF8700B490E4 /* Build configuration list for PBXNativeTarget "relationshipTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8612A38211ABF8700B490E4 /* Debug */,
-				D8612A39211ABF8700B490E4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D8612A3A211ABF8700B490E4 /* Build configuration list for PBXNativeTarget "relationshipUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8612A3B211ABF8700B490E4 /* Debug */,
-				D8612A3C211ABF8700B490E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

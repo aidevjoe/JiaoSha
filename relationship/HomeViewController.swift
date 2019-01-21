@@ -111,7 +111,8 @@ class HomeViewController: UIViewController {
             renewBtnState()
             relatives.removeAll()
         case convertBtn:
-            convertBtn.isSelected = !convertBtn.isSelected
+            convertBtn.isSelected.toggle()
+            convertBtn.imageView?.tintColor = convertBtn.isSelected ? .white : .black
             refreshRelative()
         case equalBtn:
             refreshRelative()

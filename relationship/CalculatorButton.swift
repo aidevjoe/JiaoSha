@@ -17,7 +17,7 @@ class CalculatorButton: UIButton {
         var highlightedColor: UIColor {
             switch self {
             case .day:
-                return #colorLiteral(red: 0.8812945272, green: 0.8812945272, blue: 0.8812945272, alpha: 1)
+                return #colorLiteral(red: 0.8823529412, green: 0.8823529412, blue: 0.8823529412, alpha: 1)
             case .night:
                 return UIColor(hex: 0x737373)
             }

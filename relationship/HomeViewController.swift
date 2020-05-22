@@ -80,13 +80,19 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.tintColor = .orange
 
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "night"), style: .plain, target: self, action: #selector(switchTheme))
+        if #available(iOS 13.0, *) {} else {
+             navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "night"), style: .plain, target: self, action: #selector(switchTheme))
+        }
         
         UIView.activate(constraints: [fatherBtn.heightAnchor.constraint(equalTo: fatherBtn.widthAnchor)])
         
         [resultLabel, enterLabel].forEach { $0.adjustsFontSizeToFitWidth = true }
     
-        isNight = UserDefaults.standard.bool(forKey: "isNight")
+        if #available(iOS 13.0, *) {
+            isNight = view.traitCollection.userInterfaceStyle == .dark
+        } else {
+            isNight = UserDefaults.standard.bool(forKey: "isNight")
+        }
     }
     
     @IBAction func tapKeyAction(_ btn: CalculatorButton) {
@@ -194,6 +200,14 @@ extension HomeViewController {
             self.resultLabel.textColor = self.isNight ? .white : .black
         }
         setNeedsStatusBarAppearanceUpdate()
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        if #available(iOS 13.0, *) {
+            isNight = view.traitCollection.userInterfaceStyle == .dark
+        }
     }
 }
 

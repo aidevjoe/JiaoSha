@@ -107,6 +107,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func tapFunctionKeyAction(_ btn: CalculatorButton) {
+        Vibrations.light.vibrate()
         switch btn {
         case clearEntryBtn:
             if relatives.count > 0 {

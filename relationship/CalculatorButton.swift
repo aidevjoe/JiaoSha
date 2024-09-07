@@ -2,56 +2,6 @@ import UIKit
 
 class CalculatorButton: UIButton {
     
-    enum ColorTheme {
-        case day, night
-        
-        var normalColor: UIColor {
-            switch self {
-            case .day:
-                return #colorLiteral(red: 0.9764705882, green: 0.9764705882, blue: 0.9764705882, alpha: 1)
-            case .night:
-                return UIColor(hex: 0x333333)
-            }
-        }
-        
-        var highlightedColor: UIColor {
-            switch self {
-            case .day:
-                return #colorLiteral(red: 0.8823529412, green: 0.8823529412, blue: 0.8823529412, alpha: 1)
-            case .night:
-                return UIColor(hex: 0x737373)
-            }
-        }
-        
-        var textColor: UIColor {
-            switch self {
-            case .day:
-                return .black
-            case .night:
-                return .white
-            }
-        }
-    }
-    
-    @IBInspectable
-    public var isNight: Bool = false {
-        didSet {
-            colorTheme = isNight ? .night : .day
-        }
-    }
-    
-    public var colorTheme: ColorTheme = .day {
-        didSet {
-            setTitleColor(colorTheme.textColor, for: .normal)
-            
-            let disabledColor = UIColor(hex: 0xe6e6e6)
-            setTitleColor(colorTheme == .day ? disabledColor : disabledColor.withAlphaComponent(0.5), for: .disabled)
-            setBackgroundColor(colorTheme.normalColor, for: .normal)
-            setBackgroundColor(UIColor.orange.withAlphaComponent(0.5), for: .selected)
-            imageView?.tintColor = colorTheme.textColor
-        }
-    }
-    
     /// The value to display on the button.
     @IBInspectable
     public var text: String? {
@@ -84,12 +34,15 @@ class CalculatorButton: UIButton {
     private func sharedInit() {
         layer.masksToBounds = true
         titleLabel?.font = UIFont.systemFont(ofSize: 25)
-        
-        colorTheme = .day
-
 
         addTarget(self, action: #selector(touchDown), for: [.touchDown, .touchDragEnter])
         addTarget(self, action: #selector(touchUp), for: [.touchUpInside, .touchDragExit, .touchCancel])
+        
+        setBackgroundColor(.secondarySystemBackground, for: .normal)
+        setBackgroundColor(.orange, for: .selected)
+        setTitleColor(.opaqueSeparator, for: .disabled)
+        imageView?.tintColor = .label
+        setTitleColor(.label, for: .normal)
     }
     
     override var intrinsicContentSize: CGSize {
@@ -104,12 +57,12 @@ class CalculatorButton: UIButton {
     
     @objc private func touchDown() {
         animator.stopAnimation(true)
-        setBackgroundColor(colorTheme.highlightedColor, for: .normal)
+        setBackgroundColor(.secondarySystemFill, for: .normal)
     }
     
     @objc private func touchUp() {
         animator = UIViewPropertyAnimator(duration: 0.3, curve: .easeOut, animations: {
-            self.setBackgroundColor(self.colorTheme.normalColor, for: .normal)
+            self.setBackgroundColor(.secondarySystemBackground, for: .normal)
         })
         animator.startAnimation()
     }

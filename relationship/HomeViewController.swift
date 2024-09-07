@@ -67,32 +67,25 @@ class HomeViewController: UIViewController {
         }
     }
     
-    private var isNight = false {
-        didSet {
-            updateTheme()
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.tintColor = .orange
-
-        if #available(iOS 13.0, *) {} else {
-             navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "night"), style: .plain, target: self, action: #selector(switchTheme))
-        }
+        
+        navigationItem.rightBarButtonItem = .init(image: .init(systemName: "ellipsis"), style: .done, target: self, action: #selector(ourAppAction))
         
         UIView.activate(constraints: [fatherBtn.heightAnchor.constraint(equalTo: fatherBtn.widthAnchor)])
         
         [resultLabel, enterLabel].forEach { $0.adjustsFontSizeToFitWidth = true }
+    }
     
-        if #available(iOS 13.0, *) {
-            isNight = view.traitCollection.userInterfaceStyle == .dark
-        } else {
-            isNight = UserDefaults.standard.bool(forKey: "isNight")
-        }
+    @objc private func ourAppAction() {
+        let ourAppVC = OurAppViewController()
+        let nav = UINavigationController(rootViewController: ourAppVC)
+        nav.modalPresentationStyle = .formSheet
+        present(nav, animated: true)
     }
     
     @IBAction func tapKeyAction(_ btn: CalculatorButton) {
@@ -119,17 +112,13 @@ class HomeViewController: UIViewController {
             relatives.removeAll()
         case convertBtn:
             convertBtn.isSelected.toggle()
-            convertBtn.imageView?.tintColor = convertBtn.isSelected ? .white : .black
+            convertBtn.imageView?.tintColor = convertBtn.isSelected ? .white : .label
             refreshRelative()
         case equalBtn:
             refreshRelative()
         default:
             break
         }
-    }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return isNight ? .lightContent : .default
     }
 }
 
@@ -179,35 +168,6 @@ extension HomeViewController {
             return "妹妹"
         default:
             return nil
-        }
-    }
-
-    @objc private func switchTheme() {
-        isNight = !isNight
-    }
-    
-    private func updateTheme() {
-        UserDefaults.standard.set(isNight, forKey: "isNight")
-        UserDefaults.standard.synchronize()
-        
-        UIView.animate(withDuration: 0.1) {
-            self.view.backgroundColor = self.isNight ? #colorLiteral(red: 0.02745098039, green: 0.06666666667, blue: 0.08235294118, alpha: 1) : .white
-            
-            [self.fatherBtn, self.motherBtn, self.husbandBtn, self.wifeBtn, self.sonBtn, self.daughterBtn,
-             self.brotherBtn, self.youngerBrotherBtn, self.sisterBtn, self.youngerSisterBtn,
-             self.clearEntryBtn, self.allClearBtn, self.convertBtn, self.equalBtn
-                ].forEach { $0?.colorTheme = self.isNight ? .night : .day }
-            
-            self.resultLabel.textColor = self.isNight ? .white : .black
-        }
-        setNeedsStatusBarAppearanceUpdate()
-    }
-    
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        
-        if #available(iOS 13.0, *) {
-            isNight = view.traitCollection.userInterfaceStyle == .dark
         }
     }
 }

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gSl-4l-Q4h">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gSl-4l-Q4h">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6uO-TI-bDg">
-                                <rect key="frame" x="20" y="237" width="335" height="346"/>
+                                <rect key="frame" x="20" y="236" width="335" height="347"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zmF-dS-3mu">
-                                        <rect key="frame" x="0.0" y="90" width="72.5" height="166"/>
+                                        <rect key="frame" x="0.0" y="90.5" width="72.5" height="166"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8tz-pO-F4Q" customClass="CalculatorButton" customModule="relationship" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="72.5" height="75.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="父"/>
                                                 </userDefinedRuntimeAttributes>
@@ -36,7 +35,7 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9D-YO-Lih" customClass="CalculatorButton" customModule="relationship" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="90.5" width="72.5" height="75.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="母"/>
                                                 </userDefinedRuntimeAttributes>
@@ -50,11 +49,11 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="u3m-ve-yHe">
-                                        <rect key="frame" x="87.5" y="0.0" width="72.5" height="346"/>
+                                        <rect key="frame" x="87.5" y="0.0" width="72.5" height="347"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EA-da-JzO" customClass="CalculatorButton" customModule="relationship" customModuleProvider="target">
                                                 <rect key="frame" x="0.5" y="0.0" width="72" height="75.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="夫"/>
                                                 </userDefinedRuntimeAttributes>
@@ -63,8 +62,8 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="scs-Qa-QAr" customClass="CalculatorButton" customModule="relationship" customModuleProvider="target">
-                                                <rect key="frame" x="0.5" y="90.5" width="72" height="75"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.5" y="90.5" width="72" height="75.5"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="妻"/>
                                                 </userDefinedRuntimeAttributes>
@@ -73,8 +72,8 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PD6-y9-bfA" customClass="CalculatorButton" customModule="relationship" customModuleProvider="target">
-                                                <rect key="frame" x="0.5" y="180.5" width="72" height="75.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.5" y="181" width="72" height="75.5"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="子"/>
                                                 </userDefinedRuntimeAttributes>
@@ -83,8 +82,8 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4b-9H-7Sd" customClass="CalculatorButton" customModule="relationship" customModuleProvider="target">
-                                                <rect key="frame" x="0.5" y="271" width="72" height="75"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.5" y="271.5" width="72" height="75.5"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="女"/>
                                                 </userDefinedRuntimeAttributes>
@@ -100,11 +99,11 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="z3I-JG-CgI">
-                                        <rect key="frame" x="175" y="0.0" width="72.5" height="346"/>
+                                        <rect key="frame" x="175" y="0.0" width="72.5" height="347"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6q-yd-Kda" customClass="CalculatorButton" customModule="relationship" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="72.5" height="75.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="兄"/>
                                                 </userDefinedRuntimeAttributes>
@@ -113,8 +112,8 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byL-Nx-aAu" customClass="CalculatorButton" customModule="relationship" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="90.5" width="72.5" height="75"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="90.5" width="72.5" height="75.5"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="弟"/>
                                                 </userDefinedRuntimeAttributes>
@@ -123,8 +122,8 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zx-4k-NXL" customClass="CalculatorButton" customModule="relationship" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="180.5" width="72.5" height="75.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="181" width="72.5" height="75.5"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="姐"/>
                                                 </userDefinedRuntimeAttributes>
@@ -133,8 +132,8 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSg-M6-pQ1" customClass="CalculatorButton" customModule="relationship" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="271" width="72.5" height="75"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="271.5" width="72.5" height="75.5"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="妹"/>
                                                 </userDefinedRuntimeAttributes>
@@ -150,11 +149,11 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="MBo-35-sJq">
-                                        <rect key="frame" x="262.5" y="0.0" width="72.5" height="346"/>
+                                        <rect key="frame" x="262.5" y="0.0" width="72.5" height="347"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ke-td-u6G" customClass="CalculatorButton" customModule="relationship" customModuleProvider="target">
                                                 <rect key="frame" x="0.5" y="0.0" width="72" height="75.5"/>
-                                                <color key="backgroundColor" red="0.92941176470588238" green="0.62745098039215685" blue="0.54509803921568623" alpha="0.58027068661971826" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="CE"/>
                                                 </userDefinedRuntimeAttributes>
@@ -163,8 +162,8 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fex-kG-rRn" customClass="CalculatorButton" customModule="relationship" customModuleProvider="target">
-                                                <rect key="frame" x="0.5" y="90.5" width="72" height="75"/>
-                                                <color key="backgroundColor" red="0.92941176469999998" green="0.62745098040000002" blue="0.5450980392" alpha="0.58027068660000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="0.5" y="90.5" width="72" height="75.5"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="AC"/>
                                                 </userDefinedRuntimeAttributes>
@@ -173,8 +172,8 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkT-UX-blZ" customClass="CalculatorButton" customModule="relationship" customModuleProvider="target">
-                                                <rect key="frame" x="0.5" y="180.5" width="72" height="75.5"/>
-                                                <color key="backgroundColor" red="0.92941176469999998" green="0.62745098040000002" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="0.5" y="181" width="72" height="75.5"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="Convert"/>
                                                 </userDefinedRuntimeAttributes>
@@ -183,8 +182,8 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tav-Zy-f9z" customClass="CalculatorButton" customModule="relationship" customModuleProvider="target">
-                                                <rect key="frame" x="0.5" y="271" width="72" height="75"/>
-                                                <color key="backgroundColor" red="0.92941176469999998" green="0.62745098040000002" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="0.5" y="271.5" width="72" height="75.5"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="equal"/>
                                                 </userDefinedRuntimeAttributes>
@@ -211,16 +210,16 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9UJ-kA-MDD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自己" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLI-Tf-t0P">
-                                        <rect key="frame" x="15" y="160" width="345" height="42"/>
+                                        <rect key="frame" x="15" y="159" width="345" height="42"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u62-O6-ncf">
-                                        <rect key="frame" x="15" y="144.5" width="345" height="0.5"/>
+                                        <rect key="frame" x="15" y="143" width="345" height="1"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="0He-8j-Mak"/>
@@ -248,7 +247,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6uO-TI-bDg" firstAttribute="top" secondItem="9UJ-kA-MDD" secondAttribute="bottom" constant="20" id="2Xz-ht-auI"/>
                             <constraint firstItem="9UJ-kA-MDD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Eua-7A-EUU"/>
@@ -258,7 +258,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6uO-TI-bDg" secondAttribute="bottom" constant="20" id="gs6-zY-DXe"/>
                             <constraint firstItem="9UJ-kA-MDD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zb5-fg-BGR"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="drm-1d-eiJ"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -307,5 +306,11 @@
     <resources>
         <image name="Convert" width="30" height="30"/>
         <image name="equal" width="31" height="31"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

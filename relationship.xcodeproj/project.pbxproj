@@ -18,6 +18,7 @@
 		D8612A42211AC84B00B490E4 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8612A41211AC84B00B490E4 /* UIColor+.swift */; };
 		D8612A44211AC86E00B490E4 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8612A43211AC86E00B490E4 /* UIView+Layout.swift */; };
 		D8DCF2B32A4EC38C008BC5AF /* Vibrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DCF2B22A4EC38C008BC5AF /* Vibrations.swift */; };
+		D89CCD392C8BDC5700A7DC23 /* OurAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89CCD382C8BDC5700A7DC23 /* OurAppViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		D8612A41211AC84B00B490E4 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		D8612A43211AC86E00B490E4 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		D8DCF2B22A4EC38C008BC5AF /* Vibrations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vibrations.swift; sourceTree = "<group>"; };
+		D89CCD382C8BDC5700A7DC23 /* OurAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurAppViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				D8612A3F211AC7D200B490E4 /* CalculatorButton.swift */,
 				D8612A41211AC84B00B490E4 /* UIColor+.swift */,
 				D8612A43211AC86E00B490E4 /* UIView+Layout.swift */,
+				D89CCD382C8BDC5700A7DC23 /* OurAppViewController.swift */,
 			);
 			path = relationship;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				D8612A12211ABF8400B490E4 /* HomeViewController.swift in Sources */,
 				D8612A42211AC84B00B490E4 /* UIColor+.swift in Sources */,
 				D8612A40211AC7D200B490E4 /* CalculatorButton.swift in Sources */,
+				D89CCD392C8BDC5700A7DC23 /* OurAppViewController.swift in Sources */,
 				D8612A10211ABF8400B490E4 /* AppDelegate.swift in Sources */,
 				D8DCF2B32A4EC38C008BC5AF /* Vibrations.swift in Sources */,
 				D8612A44211AC86E00B490E4 /* UIView+Layout.swift in Sources */,
@@ -299,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -353,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -371,7 +375,8 @@
 				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = T8CE5P8P3Y;
 				INFOPLIST_FILE = relationship/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -393,7 +398,8 @@
 				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = T8CE5P8P3Y;
 				INFOPLIST_FILE = relationship/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

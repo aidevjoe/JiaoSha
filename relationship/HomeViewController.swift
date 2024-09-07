@@ -91,6 +91,7 @@ class HomeViewController: UIViewController {
     @IBAction func tapKeyAction(_ btn: CalculatorButton) {
         guard let text = btn.currentTitle, text.count > 0,
         let relation = convertToRelation(text: text) else { return }
+        Vibrations.light.vibrate()
         relatives.append(relation)
     }
     

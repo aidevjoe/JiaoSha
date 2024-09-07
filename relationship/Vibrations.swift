@@ -1,8 +1,15 @@
 //
 //  Vibrations.swift
+<<<<<<< HEAD
 //  V2er
 //
 //  Created by Joe on 2020/12/22.
+=======
+//  relationship
+//
+//  Created by Joe on 2024/9/7.
+//  Copyright © 2024 Joe. All rights reserved.
+>>>>>>> 9f1d09d (添加点击震感反馈)
 //
 
 import AVFoundation
